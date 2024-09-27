@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lamborghini - Luxury cars</title>
+  <link rel="icon" href="assets/images/pngwing.com.png" type="image/x-icon">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+  <!-- GSAP and ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  
+  <!-- Link to JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body bgcolor="black">
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <video class="background-video" autoplay muted loop>
+      <source src="https://firebasestorage.googleapis.com/v0/b/frontend-cf6a5.appspot.com/o/lambo.mp4?alt=media&token=d3ad9d91-24c2-48fe-ab96-4fa7be3202ec" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1 class="gsap-fade" style="color: rgba(255, 255, 255, 0.639); font-size: 2.5rem;">Drive The Future</h1>
+      <a href="#models" class="cta-button gsap-fade">Get high</a>
+    </div>
+    <button id="mute-toggle-btn" class="mute-btn">Unmute</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="gsap-fade" style="font-size: 2.2rem; color: white;">About Our Brand</h2>
+    <p class="gsap-fade">We believe in pushing the limits of automotive design to create cars that combine luxury, performance, and innovation.</p>
+    <div class="about-features">
+      <div class="feature gsap-fade">
+        <img src="assets/images/speed.jpg" alt="Speed Icon">
+        <h3>High Performance</h3>
+        <p>Our cars are engineered for top speeds, precise handling, and unparalleled performance.</p>
+      </div>
+      <div class="feature gsap-fade">
+        <img src="assets/images/design.jpg" alt="Design Icon">
+        <h3>Exquisite Design</h3>
+        <p>A perfect blend of futuristic aesthetics and functional elegance that turns heads.</p>
+      </div>
+      <div class="feature gsap-fade">
+        <img src="assets/images/tech.jpg" alt="Technology Icon">
+        <h3>Advanced Technology</h3>
+        <p>Incorporating the latest in automotive tech, from AI driving assistance to smart navigation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Information Section -->
+  <section id="more-info" class="more-info-section">
+    <h2 class="gsap-fade" style="font-size: 2.2rem;">Why We Stand Out</h2>
+    <p class="gsap-fade">Our commitment to innovation and excellence sets us apart in the automotive industry.</p>
+    <img src="assets/images/showcase.jpg" style="border-radius: 2%;" height="60%rem" width="90%" alt="Commitment Image" class="gsap-fade">
+  </section>
+
+  <!-- Car Models Section -->
+  <section id="models" class="models-section">
+    <h1 class="gsap-fade" style="color: white; font-size: 2rem;">Our Latest Models</h1>
+    <div class="model-grid">
+        <div class="model-card gsap-fade">
+        <a href="checkout/sedan.html">
+        <video class="model-video" autoplay muted loop>
+          <source src="https://firebasestorage.googleapis.com/v0/b/frontend-cf6a5.appspot.com/o/sedan.mp4?alt=media&token=ee302669-1291-491e-bd48-eaa05da8dde7" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Luxury Sedan</h3>
+        </a>
+      </div>
+  
+      <div class="model-card gsap-fade">  
+        <a href="checkout/suv.html">
+        <video class="model-video" autoplay muted loop >
+          <source src="https://firebasestorage.googleapis.com/v0/b/frontend-cf6a5.appspot.com/o/suv.mp4?alt=media&token=b63775b0-9c20-4939-bf69-4499091eee96" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Off-Road SUV</h3>
+      </a>
+      </div>
+      
+      <div class="model-card gsap-fade">
+        <a href="checkout/sport.html">
+        <video class="model-video" autoplay muted loop>
+          <source src="https://firebasestorage.googleapis.com/v0/b/frontend-cf6a5.appspot.com/o/sport-car.mp4?alt=media&token=c7125d37-998f-4678-afcb-0c06690749bb" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Sport Coupe</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <h2 class="gsap-fade" style="font-size: 2.2rem;">Why Choose Us?</h2>
+    <div class="features-grid">
+      <div class="feature-box gsap-fade">
+        <img src="assets/images/interior.jpg" alt="Customizable Interiors">
+        <h3>Customizable Interiors</h3>
+        <p>Design your dream car from the inside out, with luxurious leather, custom lighting, and smart infotainment systems.</p>
+      </div>
+      <div class="feature-box gsap-fade">
+        <img src="assets/images/auto.jpg" alt="Autonomous Driving">
+        <h3>Autonomous Driving</h3>
+        <p>Our advanced AI-powered driving systems give you full control over the journey while enhancing safety.</p>
+      </div>
+      <div class="feature-box gsap-fade">
+        <img src="assets/images/engine.jpg" alt="Eco-Friendly Engines">
+        <h3>Eco-Friendly Engines</h3>
+        <p>Experience the thrill of driving with hybrid and electric models that reduce your carbon footprint.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Content Section -->
+  <section class="additional-content">
+    <h2 class="gsap-fade" style="font-size: 2rem;">Experience the Difference</h2>
+    <p class="gsap-fade">Join us as we redefine the automotive experience through innovative design and technology.</p>
+    <img src="assets/images/showcase2.jpg" style="border-radius: 5%; border: 2px solid rgb(1, 1, 15);" width="90%" height="60%rem"  alt="Innovative Design" class="gsap-fade">
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="gsap-fade" style="margin-top: 250px;">Contact Us</h2>
+    <form action="thanks.html" method="get" class="gsap-fade">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p>Made by HARSHIT</p>
+  </section>
+
+</body>
+</html>

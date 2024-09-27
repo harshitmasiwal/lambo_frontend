@@ -1,0 +1,247 @@
+::-webkit-scrollbar {
+  display: none;
+}
+body, html {
+    font-family: 'Permanent Marker', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh; /* Keep the hero video large */
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #f10115; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .about-section, .models-section, .features-section, .contact-section, .more-info-section, .additional-content {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .more-info-section {
+    background-color: #0000009e; /* Light background for contrast */
+    color: white;
+  }
+  
+  .features-section {
+    background-color: #383636; /* Light gray for contrast */
+    color: white;
+    border-radius: 2%;
+    padding: 2%;
+  }
+  
+  .about-features, .features-grid, .model-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #000000;
+    border-radius: 5%;
+    padding: 100px;
+  }
+  
+  .feature, .feature-box, .model-card {
+    width: 35%;
+    margin: 15px;
+    background-color: rgb(8, 10, 19);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.6s;
+    color: rgb(175, 170, 170);
+    border: 5px solid rgba(4, 4, 88, 0.712);
+  }
+  
+  .feature img, .feature-box img, .model-video {
+    width: 100%;
+    border-radius: 0px;
+    height: auto;
+    
+  }
+  
+  .feature:hover, .feature-box:hover, .model-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-section {
+    background-color: #080528;
+    color: rgb(222, 211, 211);
+    font-size: 1rem;
+    background-image: url("assets/images/last.jpg" );
+    background-size :cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-section input, 
+  .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #1e0c68; /* Button color */
+    color: white;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Additional styles for more scrollable content */
+  .additional-content {
+    background-color: #000000; /* Light gray for additional content */
+    padding: 5px 20px;
+    color: white;
+    font-size: 1rem;
+    
+  }
+  
+  .mute-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .mute-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .model-card a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Keeps the text color the same as the parent */
+    display: block; /* Makes the whole area clickable */
+  }
+  
+  .model-card a:hover {
+    /* Optionally, add hover effects here if needed */
+    opacity: 1; /* Slight transparency on hover */
+    color: rgb(255, 148, 148);
+    
+  }
+  
+
+  @media (max-width: 700px) {
+
+    
+    /* Adjust the body and hero content for smaller screens */
+    body, html {
+      font-size: 0.9rem; /* Slightly reduce font size */
+    }
+  
+    .hero {
+      position: relative;
+      height: 100vh; /* Keep the hero video large */
+      overflow:hidden;
+      
+    }
+  
+    
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .cta-button {
+      padding: 8px 15px; /* Adjust button padding for small screens */
+      font-size: 1rem;
+    }
+  
+    .mute-btn {
+      bottom: 10px; /* Adjust mute button position */
+      right: 10px;
+    }
+  
+  
+    .about-features, .features-grid, .model-grid {
+      flex-direction: column; /* Stack the elements vertically */
+      padding: 20px; /* Adjust padding */
+    
+    }
+
+    .features-grid{
+      border-radius: 2rem;
+    }
+  
+    .feature, .feature-box, .model-card {
+      width: 90%; /* Take up full width with some margin */
+      margin: 10px auto; /* Center align */
+    }
+
+    .features-section{
+      border-radius: 0;
+    }
+  
+    .about-section, .models-section, .features-section, .more-info-section, .additional-content {
+      padding: 20px 10px; /* Adjust padding */
+      
+    }
+  
+    .contact-section {
+      
+      height:100%; /* Adjust height */
+    }
+  
+    .contact-section form {
+      padding-right: 5%;
+    }
+  }
